@@ -9,7 +9,7 @@ export const COLUMNS_NAVY_PIER = [
         accessor: 'vid',
     },
     {
-        Header: "Destination",
+        Header: "To",
         accessor: "pattern",
     },
     {
@@ -17,12 +17,16 @@ export const COLUMNS_NAVY_PIER = [
         accessor: "time_from_now",
     },
     {
-        Header: 'Schd. Deviation',
+        Header: 'Dev.',
         accessor: 'd_np',
     },
     {
-        Header: "Rec. Adjustment",
+        Header: "Rec. Adjust",
         accessor: "rec_np"
+    },
+    {
+        Header: "On",
+        accessor: "on"
     }
 ]
 
@@ -36,7 +40,7 @@ export const COLUMNS_RED = [
         accessor: 'vid',
     },
     {
-        Header: "Destination",
+        Header: "To",
         accessor: "pattern",
     },
     {
@@ -44,16 +48,12 @@ export const COLUMNS_RED = [
         accessor: "time_from_now",
     },
     {
-        Header: 'Schd. Deviation',
+        Header: 'Dev.',
         accessor: 'd_red',
     },
     {
         Header: 'Headway',
         accessor: 'h_red'
-    },
-    {
-        Header: 'Next Headway',
-        accessor: 'fh_red'
     },
     {
         Header: 'Front Status',
@@ -64,7 +64,7 @@ export const COLUMNS_RED = [
         accessor: 'fh_msg_red'
     },
     {
-        Header: 'Rec. Holding', 
+        Header: 'Rec. Hold', 
         accessor: 'rec_red'
     }
 ]
@@ -79,7 +79,7 @@ export const COLUMNS_BROWN = [
         accessor: 'vid',
     },
     {
-        Header: "Destination",
+        Header: "To",
         accessor: "pattern",
     },
     {
@@ -87,16 +87,12 @@ export const COLUMNS_BROWN = [
         accessor: "time_from_now",
     },
     {
-        Header: 'Schd. Deviation',
+        Header: 'Dev.',
         accessor: 'd_brown',
     },
     {
         Header: 'Headway',
         accessor: 'h_brown'
-    },
-    {
-        Header: 'Next Headway',
-        accessor: 'fh_brown'
     },
     {
         Header: 'Front Status',
@@ -107,7 +103,7 @@ export const COLUMNS_BROWN = [
         accessor: 'fh_msg_brown'
     },
     {
-        Header: 'Rec. Holding', 
+        Header: 'Rec. Hold', 
         accessor: 'rec_brown'
     }
 ]
@@ -122,7 +118,7 @@ export const COLUMNS_BLUE = [
         accessor: 'vid',
     },
     {
-        Header: "Destination",
+        Header: "To",
         accessor: "pattern",
     },
     {
@@ -130,16 +126,12 @@ export const COLUMNS_BLUE = [
         accessor: "time_from_now",
     },
     {
-        Header: 'Schd. Deviation',
+        Header: 'Dev.',
         accessor: 'd_blue',
     },
     {
         Header: 'Headway',
         accessor: 'h_blue'
-    },
-    {
-        Header: 'Next Headway',
-        accessor: 'fh_blue'
     },
     {
         Header: 'Front Status',
@@ -150,7 +142,7 @@ export const COLUMNS_BLUE = [
         accessor: 'fh_msg_blue'
     },
     {
-        Header: 'Rec. Holding', 
+        Header: 'Rec. Hold', 
         accessor: 'rec_blue'
     }
 ]

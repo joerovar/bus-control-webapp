@@ -6,7 +6,8 @@ table {
   
   table td, table th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 8px 4px;
+    font-size: 14px;
   }
   
   table tr:nth-child(even){background-color: #e0ffff;}
@@ -19,4 +20,6 @@ table {
     text-align: center;
     background-color: #008b8b;
     color: white;
+    font-weight: normal;
+    font-size: 15px;
   }

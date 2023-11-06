@@ -36,6 +36,15 @@ export function ModalNavyPier(props) {
         }
     };
 
+    // Utility function to get the desired substring of prdatm_np
+    const formatPrdatmNp = (prdatmNp) => {
+        if (prdatmNp && prdatmNp.length >= 8) {
+            // Return the substring from -8 to -3, exclusive
+            return prdatmNp.slice(-8, -3);
+        }
+        return prdatmNp; // Or return some default value or empty string if you prefer
+    };
+
     useEffect(() => {
         fetch(toggleConfUrl)
             .then(response => {
@@ -69,7 +78,7 @@ export function ModalNavyPier(props) {
                 <div className="body">
                     <div className="bodySection">
                         <ul>
-                            <li><strong>arrives in:</strong> {data.prdatm_np}</li>
+                            <li><strong>arrives at:</strong> {formatPrdatmNp(data.prdatm_np)}</li>
                             <li><strong>in relief:</strong> {data.relieved}</li>
                             <li><strong>ebus?:</strong>  {data.ebus}</li>
                             <li><strong>normal headway:</strong>  {data.sh_np}</li>
