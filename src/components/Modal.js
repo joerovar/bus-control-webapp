@@ -73,7 +73,7 @@ export function ModalNavyPier(props) {
                     <button onClick={() => props.closeModal(false)}> x </button>
                 </div>
                 <div className="title">
-                    <h1>Run {data.rid} Bus {data.vid} Operator {data.oid}</h1>
+                    <h1>Run {data.rid} Bus {data.vid} Badge {data.oid}</h1>
                 </div>
                 <div className="body">
                     <div className="bodySection">
@@ -151,7 +151,7 @@ export function ModalRed(props) {
                     <button onClick={() => props.closeModal(false)}> x </button>
                 </div>
                 <div className="title">
-                    <h1>Run {rid} Bus {vid} Operator {oid}</h1>
+                    <h1>Run {rid} Bus {vid} Badge {oid}</h1>
                 </div>
                 <div className="body">
                     <div className="bodySection">
@@ -220,7 +220,7 @@ export function ModalBrown(props) {
                     <button onClick={() => props.closeModal(false)}> x </button>
                 </div>
                 <div className="title">
-                    <h1>Run {rid} Bus {vid} Operator {oid}</h1>
+                    <h1>Run {rid} Bus {vid} Badge {oid}</h1>
                 </div>
                 <div className="body">
                     <div className="bodySection">
@@ -289,7 +289,7 @@ export function ModalBlue(props) {
                     <button onClick={() => props.closeModal(false)}> x </button>
                 </div>
                 <div className="title">
-                    <h1>Run {rid} Bus {vid} Operator {oid}</h1>
+                    <h1>Run {rid} Bus {vid} Badge {oid}</h1>
                 </div>
                 <div className="body">
                     <div className="bodySection">
