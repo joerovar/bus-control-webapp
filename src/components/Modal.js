@@ -64,7 +64,7 @@ export function ModalNavyPier(props) {
                 <div className="body">
                     <div className="bodySection">
                         <li><strong>arrival:</strong> {formatPrdatmNp(data.prdatm_np)}</li>
-                        <li><strong>confirmed:</strong>  {data.conf_np}</li>
+                        <li><strong>instructed:</strong>  {data.conf_np}</li>
                         <li><strong>hold/move up by:</strong>  {data.rec_np}</li>
                         <li><strong>normal headway:</strong>  {data.sh_np}</li>
                         <li><strong>headway:</strong>  {data.h_np}</li>
@@ -135,7 +135,7 @@ export function ModalRed(props) {
                     <div className="bodySection">
                         <ul>
                             <li><strong>hold back:</strong> {data.rec_red}</li>
-                            <li><strong>confirmed:</strong> {data.conf_red}</li>
+                            <li><strong>instructed:</strong> {data.conf_red}</li>
                             <li><strong>in relief:</strong> {data.relieved}</li>
                             <li><strong>normal headway:</strong>  {data.sh_np}</li>
                             <li><strong>next recovery:</strong>  {data.recovery}</li>
@@ -144,7 +144,7 @@ export function ModalRed(props) {
                     </div>
                     <div className="bodySection">
                         {/* <p className="buttonTitle"></p> */}
-                        <button onClick={toggleConfirmation}>confirm</button>
+                        <button onClick={toggleConfirmation}>instructed</button>
                     </div>
                 </div>
                 <div className="footer">
@@ -198,7 +198,7 @@ export function ModalBrown(props) {
                     <div className="bodySection">
                         <ul>
                             <li><strong>hold back:</strong> {data.rec_brown}</li>
-                            <li><strong>confirmed:</strong> {data.conf_brown}</li>
+                            <li><strong>instructed:</strong> {data.conf_brown}</li>
                             <li><strong>in relief:</strong> {data.relieved}</li>
                             <li><strong>normal headway:</strong>  {data.sh_np}</li>
                             <li><strong>next recovery:</strong>  {data.recovery}</li>
@@ -261,7 +261,7 @@ export function ModalBlue(props) {
                     <div className="bodySection">
                         <ul>
                             <li><strong>hold back:</strong> {data.rec_blue}</li>
-                            <li><strong>confirmed:</strong> {data.conf_blue}</li>
+                            <li><strong>instructed:</strong> {data.conf_blue}</li>
                             <li><strong>in relief:</strong> {data.relieved}</li>
                             <li><strong>normal headway:</strong>  {data.sh_np}</li>
                             <li><strong>next recovery:</strong>  {data.recovery}</li>
