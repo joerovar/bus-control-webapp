@@ -207,7 +207,7 @@ export function ModalBrown(props) {
                     </div>
                     <div className="bodySection">
                         {/* <p className="buttonTitle"></p> */}
-                        <button onClick={toggleConfirmation}>confirm</button>
+                        <button onClick={toggleConfirmation}>instructed</button>
                     </div>
                 </div>
                 <div className="footer">
