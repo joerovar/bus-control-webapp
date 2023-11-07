@@ -15,7 +15,7 @@ export const TableNavyPier = () => {
         const fetchData = async () => {
           setLoading(true);
           try {
-            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=3&orderby=prddtm_np");
+            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=4&orderby=prddtm_np");
             if (!response.ok) {
               // This will capture HTTP errors like 404 or 500, but not network errors
               throw new Error(`HTTP error! Status: ${response.status}`);
@@ -110,7 +110,7 @@ export const TableRed = () => {
         const fetchData = async () => {
           setLoading(true);
           try {
-            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=3&orderby=prdtm_red");
+            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=4&orderby=prdtm_red");
             if (!response.ok) {
               // This will capture HTTP errors like 404 or 500, but not network errors
               throw new Error(`HTTP error! Status: ${response.status}`);
@@ -200,13 +200,12 @@ export const TableBrown = () => {
     const [error, setError] = useState(null);
   
     const columns = useMemo(() => COLUMNS_BROWN, [])
-    // const { data, loading, error } = useTableData("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=3&orderby=prddtm_np");
 
     useEffect(() => {
         const fetchData = async () => {
           setLoading(true);
           try {
-            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=3&orderby=prdtm_brown");
+            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=4&orderby=prdtm_brown");
             if (!response.ok) {
               // This will capture HTTP errors like 404 or 500, but not network errors
               throw new Error(`HTTP error! Status: ${response.status}`);
@@ -301,7 +300,7 @@ export const TableBlue = () => {
         const fetchData = async () => {
           setLoading(true);
           try {
-            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=3&orderby=prdtm_blue");
+            const response = await fetch("https://bus-control-web-demo.ue.r.appspot.com/bus/top?num=4&orderby=prdtm_blue");
             if (!response.ok) {
               // This will capture HTTP errors like 404 or 500, but not network errors
               throw new Error(`HTTP error! Status: ${response.status}`);
