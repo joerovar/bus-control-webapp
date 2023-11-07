@@ -71,7 +71,7 @@ export function ModalNavyPier(props) {
                         <li><strong>next headway:</strong>  {data.fh_np}</li>
                         <li><strong>in relief:</strong> {data.relieved}</li>
                         <li><strong>ebus?:</strong>  {data.ebus}</li>
-                        <li><strong>recovery:</strong>  {data.recovery}</li>
+                        <li><strong>next recovery:</strong>  {data.recovery}</li>
                         <li><strong>trip ID:</strong>  {data.trip_id}</li>
                     </div>
                     <div className="bodySection">
@@ -134,11 +134,11 @@ export function ModalRed(props) {
                 <div className="body">
                     <div className="bodySection">
                         <ul>
-                            <li><strong>in relief:</strong> {data.relieved}</li>
-                            <li><strong>normal headway:</strong>  {data.sh_np}</li>
                             <li><strong>hold back:</strong> {data.rec_red}</li>
                             <li><strong>confirmed:</strong> {data.conf_red}</li>
-                            <li><strong>recovery:</strong>  {data.recovery}</li>
+                            <li><strong>in relief:</strong> {data.relieved}</li>
+                            <li><strong>normal headway:</strong>  {data.sh_np}</li>
+                            <li><strong>next recovery:</strong>  {data.recovery}</li>
                             <li><strong>trip ID:</strong>  {data.trip_id}</li>
                         </ul>
                     </div>
@@ -197,11 +197,11 @@ export function ModalBrown(props) {
                 <div className="body">
                     <div className="bodySection">
                         <ul>
-                            <li><strong>in relief:</strong> {data.relieved}</li>
-                            <li><strong>normal headway:</strong>  {data.sh_np}</li>
                             <li><strong>hold back:</strong> {data.rec_brown}</li>
                             <li><strong>confirmed:</strong> {data.conf_brown}</li>
-                            <li><strong>recovery:</strong>  {data.recovery}</li>
+                            <li><strong>in relief:</strong> {data.relieved}</li>
+                            <li><strong>normal headway:</strong>  {data.sh_np}</li>
+                            <li><strong>next recovery:</strong>  {data.recovery}</li>
                             <li><strong>trip ID:</strong>  {data.trip_id}</li>
                         </ul>
                     </div>
@@ -260,11 +260,11 @@ export function ModalBlue(props) {
                 <div className="body">
                     <div className="bodySection">
                         <ul>
-                            <li><strong>in relief:</strong> {data.relieved}</li>
-                            <li><strong>normal headway:</strong>  {data.sh_np}</li>
                             <li><strong>hold back:</strong> {data.rec_blue}</li>
                             <li><strong>confirmed:</strong> {data.conf_blue}</li>
-                            <li><strong>recovery:</strong>  {data.recovery}</li>
+                            <li><strong>in relief:</strong> {data.relieved}</li>
+                            <li><strong>normal headway:</strong>  {data.sh_np}</li>
+                            <li><strong>next recovery:</strong>  {data.recovery}</li>
                             <li><strong>trip ID:</strong>  {data.trip_id}</li>
                         </ul>
                     </div>
