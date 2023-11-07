@@ -3,7 +3,6 @@ import { useTable } from 'react-table';
 import { COLUMNS_NAVY_PIER, COLUMNS_RED, COLUMNS_BROWN, COLUMNS_BLUE } from './columns';
 import './table.css';
 import {ModalNavyPier, ModalRed, ModalBrown, ModalBlue} from "./Modal"
-import useTableData from './useTableData'
 
 export const TableNavyPier = () => {
     const [data, setData] = useState([]);

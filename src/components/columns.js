@@ -1,3 +1,5 @@
+import moment from 'moment'; // Make sure to install moment.js with npm or yarn
+
 
 export const COLUMNS_NAVY_PIER = [
     {
@@ -27,7 +29,35 @@ export const COLUMNS_NAVY_PIER = [
     {
         Header: "On",
         accessor: "on"
+    },
+    {
+        Header: 'Recovery',
+        id: 'availableLayover', // This can be any unique string
+        accessor: data => {
+            // Check if prdatm_np is empty or null
+            if (!data.prdatm_np || !data.schdtm_np) {
+                return ''; // Return an empty string if there is no data
+            }
+            // Parse the timestamps
+            const prdatm = moment(data.prdatm_np, 'YYYY-MM-DD HH:mm:ss');
+            const schdtm = moment(data.schdtm_np, 'YYYY-MM-DD HH:mm:ss');
+            // Calculate the difference in minutes
+            const diff = schdtm.diff(prdatm, 'minutes');
+            // Return the difference or 0 if it's negative, as a string
+            return Math.max(diff, 0).toString();
+        },
+        Cell: ({ value }) => {
+            // If the value is an empty string, just return it
+            if (value === '') {
+                return value;
+            }
+            // Determine the color based on the value
+            const color = parseInt(value) >= 5 ? 'green' : 'red';
+            // Style the cell content
+            return <span style={{ color: color }}>{value}</span>;
+        }
     }
+    
 ]
 
 export const COLUMNS_RED = [
