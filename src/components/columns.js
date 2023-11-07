@@ -86,11 +86,11 @@ export const COLUMNS_RED = [
         accessor: 'h_red'
     },
     {
-        Header: 'Front Status',
+        Header: 'Front',
         accessor: 'h_msg_red',
     },
     {
-        Header: 'Back Status', 
+        Header: 'Back', 
         accessor: 'fh_msg_red'
     },
     {
@@ -125,11 +125,11 @@ export const COLUMNS_BROWN = [
         accessor: 'h_brown'
     },
     {
-        Header: 'Front Status',
+        Header: 'Front',
         accessor: 'h_msg_brown',
     },
     {
-        Header: 'Back Status', 
+        Header: 'Back', 
         accessor: 'fh_msg_brown'
     },
     {
@@ -164,11 +164,11 @@ export const COLUMNS_BLUE = [
         accessor: 'h_blue'
     },
     {
-        Header: 'Front Status',
+        Header: 'Front',
         accessor: 'h_msg_blue',
     },
     {
-        Header: 'Back Status', 
+        Header: 'Back', 
         accessor: 'fh_msg_blue'
     },
     {
