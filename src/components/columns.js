@@ -64,38 +64,47 @@ export const COLUMNS_RED = [
     {
         Header: 'Run',
         accessor: 'rid',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.rid}</span>
     },
     {
         Header: 'Bus',
         accessor: 'vid',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.vid}</span>
     },
     {
         Header: "To",
         accessor: "pattern",
-    },
-    {
-        Header: "Arrives in",
-        accessor: "time_from_now",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.pattern}</span>
     },
     {
         Header: 'Dev.',
         accessor: 'd_red',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.d_red}</span>
+    },
+    {
+        Header: "Arrives in",
+        accessor: "time_from_now",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.time_from_now}</span>
     },
     {
         Header: 'Headway',
-        accessor: 'h_red'
+        accessor: 'h_red',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.h_red}</span>
+    },
+    {
+        Header: 'Rec. Hold', 
+        accessor: 'rec_red',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.rec_red}</span>
     },
     {
         Header: 'Front',
         accessor: 'h_msg_red',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.h_msg_red}</span>
     },
     {
         Header: 'Back', 
-        accessor: 'fh_msg_red'
-    },
-    {
-        Header: 'Rec. Hold', 
-        accessor: 'rec_red'
+        accessor: 'fh_msg_red',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.fh_msg_red}</span>
     }
 ]
 
@@ -103,38 +112,47 @@ export const COLUMNS_BROWN = [
     {
         Header: 'Run',
         accessor: 'rid',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.rid}</span>
     },
     {
         Header: 'Bus',
         accessor: 'vid',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.vid}</span>
     },
     {
         Header: "To",
         accessor: "pattern",
-    },
-    {
-        Header: "Arrives in",
-        accessor: "time_from_now",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.pattern}</span>
     },
     {
         Header: 'Dev.',
         accessor: 'd_brown',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.d_brown}</span>
+    },
+    {
+        Header: "Arrives in",
+        accessor: "time_from_now",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.time_from_now}</span>
     },
     {
         Header: 'Headway',
-        accessor: 'h_brown'
+        accessor: 'h_brown',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.h_brown}</span>
+    },
+    {
+        Header: 'Rec. Hold', 
+        accessor: 'rec_brown',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.rec_brown}</span>
     },
     {
         Header: 'Front',
         accessor: 'h_msg_brown',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.h_msg_brown}</span>
     },
     {
         Header: 'Back', 
-        accessor: 'fh_msg_brown'
-    },
-    {
-        Header: 'Rec. Hold', 
-        accessor: 'rec_brown'
+        accessor: 'fh_msg_brown',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.fh_msg_brown}</span>
     }
 ]
 
@@ -142,37 +160,46 @@ export const COLUMNS_BLUE = [
     {
         Header: 'Run',
         accessor: 'rid',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.rid}</span>
     },
     {
         Header: 'Bus',
         accessor: 'vid',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.vid}</span>
     },
     {
         Header: "To",
         accessor: "pattern",
-    },
-    {
-        Header: "Arrives in",
-        accessor: "time_from_now",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.pattern}</span>
     },
     {
         Header: 'Dev.',
         accessor: 'd_blue',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.d_blue}</span>
+    },
+    {
+        Header: "Arrives in",
+        accessor: "time_from_now",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.time_from_now}</span>
     },
     {
         Header: 'Headway',
-        accessor: 'h_blue'
-    },
-    {
-        Header: 'Front',
-        accessor: 'h_msg_blue',
-    },
-    {
-        Header: 'Back', 
-        accessor: 'fh_msg_blue'
+        accessor: 'h_blue',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.h_blue}</span>
     },
     {
         Header: 'Rec. Hold', 
-        accessor: 'rec_blue'
+        accessor: 'rec_blue',
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.rec_blue}</span>
+    },
+    {
+        Header: 'Front',
+        accessor: "h_msg_blue",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.h_msg_blue}</span>
+    },
+    {
+        Header: 'Back', 
+        accessor: "fh_msg_blue",
+        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.fh_msg_blue}</span>
     }
 ]
