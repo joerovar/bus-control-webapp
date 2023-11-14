@@ -45,6 +45,17 @@ export function ModalNavyPier(props) {
         return prdatmNp; // Or return some default value or empty string if you prefer
     };
 
+    // Function to format the move trip text
+    const formatMoveTrip = (recNp) => {
+            if (recNp > 0) {
+                return { text: `${recNp} back`, color: 'red' };
+            } else if (recNp < 0) {
+                return { text: `${Math.abs(recNp)} up`, color: 'red' };
+            } else {
+                return { text: '', color: 'inherit' };
+            }
+        };
+
     useEffect(() => {
         // Set the local state with the prop data only if it is not null or undefined
         if (props.rowData) {
@@ -63,9 +74,14 @@ export function ModalNavyPier(props) {
                 </div>
                 <div className="body">
                     <div className="bodySection">
+                        <li>
+                            <strong>Move trip by:</strong> 
+                            <span style={{ color: formatMoveTrip(data.rec_np).color }}>
+                                {formatMoveTrip(data.rec_np).text}
+                            </span>
+                        </li>
                         <li><strong>arrival:</strong> {formatPrdatmNp(data.prdatm_np)}</li>
                         <li><strong>instructed:</strong>  {data.conf_np}</li>
-                        <li><strong>hold/move up by:</strong>  {data.rec_np}</li>
                         <li><strong>normal headway:</strong>  {data.sh_np}</li>
                         <li><strong>headway:</strong>  {data.h_np}</li>
                         <li><strong>next headway:</strong>  {data.fh_np}</li>

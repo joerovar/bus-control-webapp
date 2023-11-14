@@ -1,5 +1,18 @@
 import moment from 'moment'; // Make sure to install moment.js with npm or yarn
 
+// Define the FormatDev function
+const FormatDev = (value) => {
+    if (value === null || value === undefined) {
+        return '';
+    } else if (value >= -1 && value <= 5) {
+        return `${value} on-time`;
+    } else if (value < -1) {
+        return `${value} early`;
+    } else {
+        return `${value} late`;
+    }
+};
+
 
 export const COLUMNS_NAVY_PIER = [
     {
@@ -21,6 +34,7 @@ export const COLUMNS_NAVY_PIER = [
     {
         Header: 'Dev.',
         accessor: 'd_np',
+        Cell: ({ value }) => FormatDev(value)
     },
     {
         Header: "Rec. Adjust",
@@ -79,7 +93,7 @@ export const COLUMNS_RED = [
     {
         Header: 'Dev.',
         accessor: 'd_red',
-        Cell: ({ row }) => <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>{row.values.d_red}</span>
+        Cell: ({ value }) => <span style={{ color: value !== null && value !== 0 ? 'red' : 'inherit' }}>{FormatDev(value)}</span>
     },
     {
         Header: "Arrives in",
@@ -127,7 +141,7 @@ export const COLUMNS_BROWN = [
     {
         Header: 'Dev.',
         accessor: 'd_brown',
-        Cell: ({ row }) => <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>{row.values.d_brown}</span>
+        Cell: ({ value }) => <span style={{ color: value !== null && value !== 0 ? 'red' : 'inherit' }}>{FormatDev(value)}</span>
     },
     {
         Header: "Arrives in",
@@ -175,7 +189,7 @@ export const COLUMNS_BLUE = [
     {
         Header: 'Dev.',
         accessor: 'd_blue',
-        Cell: ({ row }) => <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>{row.values.d_blue}</span>
+        Cell: ({ value }) => <span style={{ color: value !== null && value !== 0 ? 'red' : 'inherit' }}>{FormatDev(value)}</span>
     },
     {
         Header: "Arrives in",
