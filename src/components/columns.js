@@ -93,7 +93,11 @@ export const COLUMNS_RED = [
     {
         Header: 'Dev.',
         accessor: 'd_red',
-        Cell: ({ value }) => <span style={{ color: value !== null && value !== 0 ? 'red' : 'inherit' }}>{FormatDev(value)}</span>
+        Cell: ({ row }) => (
+            <span style={{ color: row.original.rec_red > 0 ? 'red' : 'inherit' }}>
+                {FormatDev(row.values.d_red)}
+            </span>
+        )
     },
     {
         Header: "Arrives in",
@@ -141,7 +145,11 @@ export const COLUMNS_BROWN = [
     {
         Header: 'Dev.',
         accessor: 'd_brown',
-        Cell: ({ value }) => <span style={{ color: value !== null && value !== 0 ? 'red' : 'inherit' }}>{FormatDev(value)}</span>
+        Cell: ({ row }) => (
+            <span style={{ color: row.original.rec_brown > 0 ? 'red' : 'inherit' }}>
+                {FormatDev(row.values.d_brown)}
+            </span>
+        )
     },
     {
         Header: "Arrives in",
@@ -189,7 +197,11 @@ export const COLUMNS_BLUE = [
     {
         Header: 'Dev.',
         accessor: 'd_blue',
-        Cell: ({ value }) => <span style={{ color: value !== null && value !== 0 ? 'red' : 'inherit' }}>{FormatDev(value)}</span>
+        Cell: ({ row }) => (
+            <span style={{ color: row.original.rec_blue > 0 ? 'red' : 'inherit' }}>
+                {FormatDev(row.values.d_blue)}
+            </span>
+        )
     },
     {
         Header: "Arrives in",
